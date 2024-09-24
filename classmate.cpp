@@ -11,8 +11,8 @@ using namespace std;
 int main() {
     int grade;
     cout << "What grade did you receive on your assignment?" << endl;
-    cin >> grade;
-    if (grade < 60) {
+    cin >> grade; /* Takes an integer input from the user. */
+    if (grade < 60) { /* Checks if the integer entered is any integer less than 60. */
         cout << "You got an F." << endl;
     }
     else if (grade >= 60 && grade <= 63) {
@@ -48,7 +48,7 @@ int main() {
     else if (grade >= 94 && grade <= 96) {
         cout << "You got a A." << endl;
     }
-    else {
+    else { /* Checks if the integer entered by the user is anything greater than 96, as all other numbers before have been checked. */
         cout << "You got a A+." << endl;
     }
 }
